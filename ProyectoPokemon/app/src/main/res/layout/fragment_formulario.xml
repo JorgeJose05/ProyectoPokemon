@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".formularioFragment">
+
+
+    <WebView
+        android:id="@+id/webview2"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caterpie"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"/>
+
+
+
+    <TextView
+        android:id="@+id/textViewHP"
+        android:layout_width="55dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="152dp"
+        android:text="HP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextHP"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        tools:layout_editor_absoluteX=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewATQES" />
+
+    <TextView
+        android:id="@+id/textViewATQ"
+        android:layout_width="55dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="264dp"
+        android:text="ATAQUE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextTQ"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="282dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        tools:layout_editor_absoluteX=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewATQ" />
+
+
+    <TextView
+        android:id="@+id/textViewATQES"
+        android:layout_width="55dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="372dp"
+        android:text="ATAQUE ESPECIAL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextATQES"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="390dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        tools:layout_editor_absoluteX=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHP" />
+
+
+    <TextView
+        android:id="@+id/textViewDEF"
+        android:layout_width="55dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="468dp"
+        android:text="DEFENSA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextDEF"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="486dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        tools:layout_editor_absoluteX=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDEF" />
+
+    <TextView
+        android:id="@+id/textViewDEFES"
+        android:layout_width="55dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="580dp"
+        android:text="DEFENSA ESPECIAL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextDEFES"
+        android:layout_width="138dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="598dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text=""
+        tools:layout_editor_absoluteX=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDEFES" />
+
+    <!-- pokemon 2 -->
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mewtwo"
+
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="30dp"/>
+
+
+
+        <TextView
+            android:id="@+id/textViewHP2"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="152dp"
+            android:text="HP"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextHP2"
+            android:layout_width="138dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="170dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewATQES2" />
+
+        <TextView
+            android:id="@+id/textViewATQ2"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="264dp"
+            android:text="ATAQUE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextTQ2"
+            android:layout_width="138dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="282dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewATQ2" />
+
+
+        <TextView
+            android:id="@+id/textViewATQES2"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="372dp"
+            android:text="ATAQUE ESPECIAL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextATQES2"
+            android:layout_width="138dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="390dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHP2" />
+
+
+        <TextView
+            android:id="@+id/textViewDEF2"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="468dp"
+            android:text="DEFENSA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextDEF2"
+            android:layout_width="138dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="486dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDEF2" />
+
+        <TextView
+            android:id="@+id/textViewDEFES2"
+            android:layout_width="55dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="580dp"
+            android:text="DEFENSA ESPECIAL"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextTextDEFES2"
+            android:layout_width="138dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="598dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text=""
+            tools:layout_editor_absoluteX=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDEFES2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:layout_marginStart="110dp"
+        android:text="Confirmar y Pelear" />
+
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/formularioFragment">
+
+
+
+
+    <fragment
+        android:id="@+id/combateFragment"
+        android:name="com.example.proyectopokemon.CombateFragment"
+        android:label="fragment_combate"
+        tools:layout="@layout/fragment_combate" />
+
+    <fragment
+        android:id="@+id/formularioFragment"
+        android:name="com.example.proyectopokemon.formularioFragment"
+        android:label="fragment_formulario"
+        tools:layout="@layout/fragment_formulario" >
+        <action android:id="@+id/action_formulario_to_combate"
+            app:destination="@+id/combateFragment"/>
+    </fragment>
+</navigation>
