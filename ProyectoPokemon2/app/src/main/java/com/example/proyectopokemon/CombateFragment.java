@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.example.proyectopokemon.databinding.FragmentCombateBinding;
 
@@ -71,6 +73,8 @@ public class CombateFragment extends Fragment {
         WebView webView = binding.webview1;
         //webView.getSettings().setJavaScriptEnabled(true); // Antes tenia esta linia en los dos para activar javascript ahhora no me hace falta
         webView.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/caterpie.gif");
+//        webView.loadUrl("https://i.seadn.io/gae/FcW5mVrL3DjSxmcytn_3dzNs7ZjodxN4uxIIh89Zz5sVEoh6J26KsZmgAZmnAtUaC0sCQbQtF4rh3yAGEL1rcEzb1r4wp4FQkhHqdA?auto=format&dpr=1&w=1000");
+
         final CombateViewModel miCombateViewModel = new ViewModelProvider(this).get(CombateViewModel.class);
 
         //pokemon 1
@@ -90,13 +94,30 @@ public class CombateFragment extends Fragment {
                 int atqesp2 = Integer.parseInt(binding.ataqueESP2.getText().toString()) ;
                 int defesp2 = Integer.parseInt(binding.defESP2.getText().toString()) ;
 
-                miCombateViewModel.atacar1(hp1,atq1,def1,atqesp1, defesp1, hp2, atq2, def2, atqesp2, defesp2);
+                if (hp2 <= 0){
+                    CharSequence message = "No puede atacar esta completamente debilitado";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+                }else{
+                    miCombateViewModel.atacar1(hp1,atq1,def1,atqesp1, defesp1, hp2, atq2, def2, atqesp2, defesp2);
+                }
+
             }
         });
 
         miCombateViewModel.dañoAl2.observe(getViewLifecycleOwner(), new Observer<Integer>() {
             @Override
             public void onChanged(Integer integer) {
+                if(integer <= 0 && Integer.parseInt(binding.hp2.getText().toString()) == 0 ){
+                    CharSequence message = "No puede atacar esta completamente debilitado";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+                }else if(integer <= 0){
+                    CharSequence message = "El pokemon Mewtwo a sido derrotado";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_LONG).show();
+                }else if(integer < bundle.getInt("hp2")/2){
+                    CharSequence message = "!VIDA CRITICA! El pokemon Mewtwo ya esta a menos de la mitad de la vida";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+
+                }
                 binding.hp2.setText("" + integer);
                 binding.atacar1.setEnabled(true);
             }
@@ -129,13 +150,31 @@ public class CombateFragment extends Fragment {
                 int atqesp2 = Integer.parseInt(binding.ataqueESP2.getText().toString()) ;
                 int defesp2 = Integer.parseInt(binding.defESP2.getText().toString()) ;
 
-                miCombateViewModel.atacar2(hp1,atq1,def1,atqesp1, defesp1, hp2, atq2, def2, atqesp2, defesp2);
+                if (hp2 <= 0){
+                    CharSequence message = "No puede atacar esta completamente debilitado";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+                }else{
+                    miCombateViewModel.atacar2(hp1,atq1,def1,atqesp1, defesp1, hp2, atq2, def2, atqesp2, defesp2);
+                }
+
+
             }
         });
 
         miCombateViewModel.dañoAl1.observe(getViewLifecycleOwner(), new Observer<Integer>() {
             @Override
             public void onChanged(Integer integer) {
+                if(integer <= 0 && Integer.parseInt(binding.hp1.getText().toString()) == 0 ){
+                    CharSequence message = "No puede atacar esta completamente debilitado";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+                }else if(integer <= 0){
+                    CharSequence message = "El pokemon Caterpie a sido derrotado";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_LONG).show();
+                }else if(integer < bundle.getInt("hp1")/2){
+                    CharSequence message = "!VIDA CRITICA! El pokemon Caterpie ya esta a menos de la mitad de la vida";
+                    Toast.makeText(view.getContext(), message, Toast.LENGTH_SHORT).show();
+
+                }
                 binding.hp1.setText("" + integer);
                 binding.atacar2.setEnabled(true);
             }

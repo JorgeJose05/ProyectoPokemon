@@ -31,7 +31,7 @@ public class formularioFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentFormularioBinding.inflate(inflater,container,false);
 
-        //Giffs
+//Giffs
         WebView webView2 = binding.webview2;
         webView2.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif");
 // Arceus webView2.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/arceus.gif");
@@ -40,6 +40,7 @@ public class formularioFragment extends Fragment {
         //webView.getSettings().setJavaScriptEnabled(true); // Antes tenia esta linia en los dos para activar javascript ahhora no me hace falta
         webView.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/caterpie.gif");
 
+
         return binding.getRoot();
 
          }
@@ -47,6 +48,14 @@ public class formularioFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+//Giffs
+        WebView webView2 = binding.webview2;
+        webView2.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif");
+// Arceus webView2.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/arceus.gif");
+
+        WebView webView = binding.webview;
+        //webView.getSettings().setJavaScriptEnabled(true); // Antes tenia esta linia en los dos para activar javascript ahhora no me hace falta
+        webView.loadUrl("https://img.pokemondb.net/sprites/black-white/anim/normal/caterpie.gif");
 
         binding.button.setOnClickListener(v -> {
             // Obtener los valores de los campos

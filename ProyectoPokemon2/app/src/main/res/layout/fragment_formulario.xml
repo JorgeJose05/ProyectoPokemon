@@ -36,6 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:maxLength="3"
         android:id="@+id/editTextTextHP"
         android:layout_width="138dp"
         android:layout_height="38dp"
@@ -59,6 +60,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:maxLength="3"
         android:id="@+id/editTextTextTQ"
         android:layout_width="138dp"
         android:layout_height="38dp"
@@ -74,7 +76,7 @@
 
     <TextView
         android:id="@+id/textViewATQES"
-        android:layout_width="55dp"
+        android:layout_width="wrap_content"
         android:layout_height="16dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="372dp"
@@ -83,6 +85,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:maxLength="3"
         android:id="@+id/editTextTextATQES"
         android:layout_width="138dp"
         android:layout_height="38dp"
@@ -98,7 +101,7 @@
 
     <TextView
         android:id="@+id/textViewDEF"
-        android:layout_width="55dp"
+        android:layout_width="wrap_content"
         android:layout_height="16dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="468dp"
@@ -107,6 +110,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:maxLength="3"
         android:id="@+id/editTextTextDEF"
         android:layout_width="138dp"
         android:layout_height="38dp"
@@ -121,7 +125,7 @@
 
     <TextView
         android:id="@+id/textViewDEFES"
-        android:layout_width="55dp"
+        android:layout_width="wrap_content"
         android:layout_height="16dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="580dp"
@@ -130,6 +134,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:maxLength="3"
         android:id="@+id/editTextTextDEFES"
         android:layout_width="138dp"
         android:layout_height="38dp"
@@ -174,6 +179,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:maxLength="3"
             android:id="@+id/editTextTextHP2"
             android:layout_width="138dp"
             android:layout_height="38dp"
@@ -188,7 +194,7 @@
 
         <TextView
             android:id="@+id/textViewATQ2"
-            android:layout_width="55dp"
+            android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="264dp"
@@ -197,6 +203,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:maxLength="3"
             android:id="@+id/editTextTextTQ2"
             android:layout_width="138dp"
             android:layout_height="38dp"
@@ -212,7 +219,7 @@
 
         <TextView
             android:id="@+id/textViewATQES2"
-            android:layout_width="55dp"
+            android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="372dp"
@@ -221,6 +228,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:maxLength="3"
             android:id="@+id/editTextTextATQES2"
             android:layout_width="138dp"
             android:layout_height="38dp"
@@ -236,7 +244,7 @@
 
         <TextView
             android:id="@+id/textViewDEF2"
-            android:layout_width="55dp"
+            android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="468dp"
@@ -245,6 +253,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:maxLength="3"
             android:id="@+id/editTextTextDEF2"
             android:layout_width="138dp"
             android:layout_height="38dp"
@@ -259,7 +268,7 @@
 
         <TextView
             android:id="@+id/textViewDEFES2"
-            android:layout_width="55dp"
+            android:layout_width="wrap_content"
             android:layout_height="16dp"
             android:layout_marginStart="250dp"
             android:layout_marginTop="580dp"
@@ -268,6 +277,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
+            android:maxLength="3"
             android:id="@+id/editTextTextDEFES2"
             android:layout_width="138dp"
             android:layout_height="38dp"
